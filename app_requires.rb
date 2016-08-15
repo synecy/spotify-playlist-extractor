@@ -1,4 +1,5 @@
 require 'json'
+require 'base64'
 
 # Config
 require './config/spotify.rb'

@@ -5,6 +5,11 @@ class ApplicationController < Sinatra::Base
     enable :logging, :static
   end
 
+  configure do
+    set :views, "./app/views"
+    set :public_folder, './public' 
+ end
+
   before do
     content_type "application/json", :charset => "utf-8"
     headers 'Access-Control-Allow-Origin' => '*',
